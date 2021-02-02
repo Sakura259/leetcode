@@ -5,7 +5,7 @@ package com.haobai.leetcode.tree;
  * @description:654. 最大二叉树
  * @date 2020-11-26 16:28
  */
-public class ConstructMaximumBinaryTree {
+public class 最大二叉树 {
 
 
     public TreeNode constructMaximumBinaryTree(int[] nums) {

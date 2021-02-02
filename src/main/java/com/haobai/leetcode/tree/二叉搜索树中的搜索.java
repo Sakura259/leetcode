@@ -5,7 +5,7 @@ package com.haobai.leetcode.tree;
  * @description: 700. 二叉搜索树中的搜索
  * @date 2020-11-30 00:50
  */
-public class SearchBST {
+public class 二叉搜索树中的搜索 {
 
     public TreeNode searchBST(TreeNode root, int val) {
         if (root == null) {

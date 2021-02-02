@@ -9,7 +9,7 @@ import java.util.LinkedList;
  * 采用后序遍历实现
  * @date 2020-11-30 22:27
  */
-public class PostOrderWithSerAndDes {
+public class 后序实现二叉树的序列化与反序列化 {
 
     private String ELEMENT = "#";
 

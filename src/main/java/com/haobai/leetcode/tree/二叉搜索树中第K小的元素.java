@@ -8,7 +8,7 @@ import java.util.List;
  * @description: 230 「二叉搜索树中第K小的元素」
  * @date 2020-11-28 19:36
  */
-public class KthSmallest {
+public class 二叉搜索树中第K小的元素 {
 
 
     public int kthSmallest(TreeNode root, int k) {

@@ -21,7 +21,7 @@ package com.haobai.leetcode.tree;
  * 9   6 3   1
  * @date 2020-11-25 15:07
  */
-public class InvertTree {
+public class 翻转二叉树 {
 
 
     public TreeNode invertTree(TreeNode root) {

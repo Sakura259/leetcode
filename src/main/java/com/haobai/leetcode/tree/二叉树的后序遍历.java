@@ -18,7 +18,7 @@ import java.util.List;
  * 输出: [3,2,1]
  * @date 2020-11-25 17:42
  */
-public class PostorderTraversal {
+public class 二叉树的后序遍历 {
 
     public List<Integer> postorderTraversal(TreeNode root) {
         List<Integer> list = new ArrayList<>(10);

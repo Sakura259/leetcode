@@ -6,10 +6,10 @@ package com.haobai.leetcode.tree;
  * @description: 105. 从前序与中序遍历序列构造二叉树
  * @date 2020-11-26 17:11
  */
-public class PreAndInOrderBuildTree {
+public class 从前序与中序遍历序列构造二叉树 {
 
     public static void main(String[] args) {
-        PreAndInOrderBuildTree tree = new PreAndInOrderBuildTree();
+        从前序与中序遍历序列构造二叉树 tree = new 从前序与中序遍历序列构造二叉树();
         tree.buildTree(new int[]{3, 9, 20, 15, 7}, new int[]{9, 3, 15, 20, 7});
     }
 

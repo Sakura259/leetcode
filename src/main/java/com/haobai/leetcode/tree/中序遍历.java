@@ -5,10 +5,10 @@ import java.util.List;
 
 /**
  * @author haobai
- * @description:
+ * @description: 中序遍历
  * @date 2020-11-25 17:52
  */
-public class InorderTraversal {
+public class 中序遍历 {
 
     public List<Integer> inorderTraversal(TreeNode root) {
         List<Integer> list = new ArrayList<>(10);

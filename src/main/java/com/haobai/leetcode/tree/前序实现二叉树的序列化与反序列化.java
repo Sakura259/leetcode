@@ -8,7 +8,7 @@ import java.util.LinkedList;
  * 采用前序遍历的方式实现序列化
  * @date 2020-11-30 17:28
  */
-public class PreOrderWithSerAndDes {
+public class 前序实现二叉树的序列化与反序列化 {
 
     private String ELEMENT = "#";
 

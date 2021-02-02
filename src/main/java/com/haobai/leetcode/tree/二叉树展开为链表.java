@@ -27,7 +27,7 @@ package com.haobai.leetcode.tree;
  *
  * @date 2020-11-25 16:17
  */
-public class Flatten {
+public class 二叉树展开为链表 {
 
 
     public void flatten(TreeNode root) {

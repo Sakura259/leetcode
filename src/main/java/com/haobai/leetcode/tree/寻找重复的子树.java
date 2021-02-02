@@ -29,7 +29,7 @@ import java.util.Map;
  *
  * @date 2020-11-27 14:08
  */
-public class FindDuplicateSubtrees {
+public class 寻找重复的子树 {
 
     public List<TreeNode> findDuplicateSubtrees(TreeNode root) {
 

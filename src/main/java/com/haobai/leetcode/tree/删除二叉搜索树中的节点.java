@@ -5,7 +5,7 @@ package com.haobai.leetcode.tree;
  * @description: 450.删除二叉搜索树中的节点
  * @date 2020-11-29 23:19
  */
-public class DeleteNode {
+public class 删除二叉搜索树中的节点 {
 
     public static void main(String[] args) {
         TreeNode root = new TreeNode(5);

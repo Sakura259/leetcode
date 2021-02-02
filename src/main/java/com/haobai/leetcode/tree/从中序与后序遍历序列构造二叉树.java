@@ -5,7 +5,7 @@ package com.haobai.leetcode.tree;
  * @description: 106. 从中序与后序遍历序列构造二叉树
  * @date 2020-11-26 20:33
  */
-public class InAndPostOrderBuildTree {
+public class 从中序与后序遍历序列构造二叉树 {
 
     public TreeNode buildTree(int[] inorder, int[] postorder) {
         return build(inorder, 0, inorder.length - 1, postorder, 0, postorder.length - 1);

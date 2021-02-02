@@ -5,7 +5,7 @@ package com.haobai.leetcode.tree;
  * @description: 98. 验证二叉搜索树
  * @date 2020-11-30 00:53
  */
-public class IsValidBST {
+public class 验证二叉搜索树 {
 
 
     public boolean isValidBST(TreeNode root) {

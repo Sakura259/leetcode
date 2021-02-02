@@ -18,7 +18,7 @@ import java.util.List;
  *   1-2-3
  * @date 2020-11-25 17:33
  */
-public class PreorderTraversal {
+public class 二叉树的前序遍历 {
 
     public List<Integer> preorderTraversal(TreeNode root) {
         List<Integer> list = new ArrayList<>(10);

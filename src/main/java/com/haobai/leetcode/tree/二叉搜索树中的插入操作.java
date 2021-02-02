@@ -5,7 +5,7 @@ package com.haobai.leetcode.tree;
  * @description: 701. 二叉搜索树中的插入操作
  * @date 2020-11-30 00:45
  */
-public class InsertIntoBST {
+public class 二叉搜索树中的插入操作 {
 
     public TreeNode insertIntoBST(TreeNode root, int val) {
         return insert(root, val);

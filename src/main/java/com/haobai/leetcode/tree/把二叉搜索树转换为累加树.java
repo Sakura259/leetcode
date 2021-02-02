@@ -5,7 +5,7 @@ package com.haobai.leetcode.tree;
  * @description:  538 | 1038. 把二叉搜索树转换为累加树
  * @date 2020-11-28 19:55
  */
-public class ConvertBST {
+public class 把二叉搜索树转换为累加树 {
 
     int sum = 0;
 

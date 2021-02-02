@@ -5,7 +5,7 @@ package com.haobai.leetcode.tree;
  * @description: 116. 填充每个节点的下一个右侧节点指针
  * @date 2020-11-25 15:56
  */
-public class Connect {
+public class 填充每个节点的下一个右侧节点指针 {
 
     public Node connect(Node root) {
         if (root == null) {
