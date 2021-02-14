@@ -3,8 +3,8 @@ log/
 .idea/**/*
 
 ### IntelliJ IDEA ###
-.iml
-/target/
+*/.idea/
+*.iml
+*/target/
 config-cache
 /.idea/
-/.gitignore
