@@ -1,10 +1,6 @@
 target/
 log/
 .idea/**/*
-
-### IntelliJ IDEA ###
-*/.idea/
 *.iml
 */target/
 config-cache
-/.idea/
