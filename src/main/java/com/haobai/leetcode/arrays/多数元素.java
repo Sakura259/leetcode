@@ -2,11 +2,11 @@ package com.haobai.leetcode.arrays;
 
 /**
  * @author haobai
- * @description: Majority Element（求众数）
+ * @description: 169.多数元素
  * https://leetcode-cn.com/problems/majority-element/
  * @date 2020-11-24 17:20
  */
-public class MajorityElement {
+public class 多数元素 {
 
     public static int majorityElement(int[] nums) {
         int count = 1, flag = nums[0];

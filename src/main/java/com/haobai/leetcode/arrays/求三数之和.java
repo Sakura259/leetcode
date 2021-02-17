@@ -10,11 +10,10 @@ import java.util.List;
  * 中文版：https://leetcode-cn.com/problems/3sum/
  * @date 2020-11-23 23:57
  */
-public class ThreeSum {
-
+public class 求三数之和 {
 
     public static void main(String[] args) {
-        List<List<Integer>> list = threeSum(new int[]{0, 0, 0, 0});
+        List<List<Integer>> list = threeSum(new int[]{0, 2, 3, 4});
         System.out.println(list);
     }
 

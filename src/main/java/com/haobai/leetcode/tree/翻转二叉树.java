@@ -23,7 +23,6 @@ package com.haobai.leetcode.tree;
  */
 public class 翻转二叉树 {
 
-
     public TreeNode invertTree(TreeNode root) {
         if (root == null) {
             return root;
@@ -35,7 +34,6 @@ public class 翻转二叉树 {
         invertTree(root.right);
         return root;
     }
-
 
     private class TreeNode {
         int val;

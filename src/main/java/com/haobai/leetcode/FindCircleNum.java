@@ -1,7 +1,5 @@
 package com.haobai.leetcode;
 
-import com.sun.org.apache.regexp.internal.RE;
-
 import java.util.LinkedList;
 import java.util.Queue;
 
@@ -11,7 +9,6 @@ import java.util.Queue;
  * @date 2020-11-11 22:51
  */
 public class FindCircleNum {
-
 
     public int findCircleNum(int[][] M) {
         int[] visited = new int[M.length];
