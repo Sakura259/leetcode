@@ -23,7 +23,6 @@ public class 最长递增子序列 {
             }
         }
         for (int i = 0; i < nums.length; i++) {
-
             result = Math.max(result, dp[i]);
         }
         return result;
