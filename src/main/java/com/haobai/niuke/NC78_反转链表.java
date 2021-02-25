@@ -15,6 +15,22 @@ package com.haobai.niuke;
  */
 public class NC78_反转链表 {
 
+    public static void main(String[] args) {
+        ListNode l1 = new ListNode(1);
+        ListNode l2 = new ListNode(2);
+        ListNode l3 = new ListNode(3);
+        ListNode l4 = new ListNode(4);
+        l1.next = l2;
+        l2.next = l3;
+        l3.next = l4;
+        ListNode listNode = new NC78_反转链表().ReverseList(l1);
+        while (listNode!=null) {
+            System.out.println(listNode.val);
+            listNode = listNode.next;
+        }
+
+    }
+
     public ListNode ReverseList(ListNode head) {
         ListNode current = head;
         ListNode next = null;
@@ -28,7 +44,7 @@ public class NC78_反转链表 {
         return pre;
     }
 
-    private class ListNode {
+    private static class ListNode {
         int val;
         ListNode next = null;
 
