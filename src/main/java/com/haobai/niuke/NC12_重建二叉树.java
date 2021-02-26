@@ -2,7 +2,7 @@ package com.haobai.niuke;
 
 /**
  * @author haobai
- * @description:
+ * @description: 通过前序遍历和中序遍历来重建二叉树
  * @date 2021/2/22 23:20
  */
 public class NC12_重建二叉树 {
@@ -23,7 +23,7 @@ public class NC12_重建二叉树 {
 
     private TreeNode buildTree(int[] pre, int preStart, int preEnd,
                                int[] in, int inStart, int inEnd) {
-        if (preStart > preEnd || inStart> inEnd) {
+        if (preStart > preEnd || inStart > inEnd) {
             return null;
         }
         int val = pre[preStart];

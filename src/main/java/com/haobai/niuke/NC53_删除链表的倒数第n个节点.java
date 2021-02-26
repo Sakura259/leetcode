@@ -1,7 +1,5 @@
 package com.haobai.niuke;
 
-import java.util.Queue;
-
 /**
  * @author haobai
  * @description:

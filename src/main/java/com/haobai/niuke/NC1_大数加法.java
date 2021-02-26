@@ -9,6 +9,20 @@ import java.util.LinkedList;
  */
 public class NC1_大数加法 {
 
+    /**
+     * 大树加法，通过s.charAt()获取指定位置的数字。
+     * 另外有一个c来记录仅为。
+     * 每次吧两个数相加在家仅为。
+     * 除10 的结果为进位的结果， 余10的结果为当前位置的值。
+     * <p>
+     * 字符相减可以直接计算  '7' - '0' = 7
+     * 把每一位的结果放在stack中。
+     * 最后通过stringBuilder进行拼接。
+     *
+     * @param s
+     * @param t
+     * @return
+     */
     public String solve(String s, String t) {
         LinkedList<Integer> stack = new LinkedList<>();
         int i = s.length() - 1, j = t.length() - 1, carry = 0;

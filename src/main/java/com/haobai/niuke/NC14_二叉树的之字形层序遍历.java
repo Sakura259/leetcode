@@ -34,6 +34,9 @@ public class NC14_二叉树的之字形层序遍历 {
     }
 
     /**
+     * 之字遍历和层次遍历是主要实现是一致的，主要需要处理 单数是正序，双数是逆序
+     * 逆序通过Collections.reverse 来进行反转
+     *
      * @param root TreeNode类
      * @return int整型ArrayList<ArrayList <>>
      */

@@ -15,6 +15,14 @@ public class NC15_求二叉树的层序遍历 {
         TreeNode right = null;
     }
 
+    /**
+     * 层次遍历
+     * 采用队列来做，先进先出   入队 add 出队 poll
+     * 每次循环吧队列中存在的元素放进新建的数组中，需要记录循环开始是当前队列中有多少元素
+     *
+     * @param root
+     * @return
+     */
     public ArrayList<ArrayList<Integer>> levelOrder(TreeNode root) {
         if (root == null) {
             return new ArrayList<>();
