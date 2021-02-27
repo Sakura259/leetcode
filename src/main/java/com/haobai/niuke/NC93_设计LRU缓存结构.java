@@ -25,6 +25,13 @@ public class NC93_设计LRU缓存结构 {
     private Node tail = new Node(-1, -1);
     private int k;
 
+    /**
+     * 由于存取需要O(1)的效率，因此用hashmap来存数据，key为 arr[i][1], value为 node节点（arr[i][1], arr[i][2]）
+     *
+     * @param operators
+     * @param k
+     * @return
+     */
     public int[] LRU(int[][] operators, int k) {
         // write code here
         this.k = k;

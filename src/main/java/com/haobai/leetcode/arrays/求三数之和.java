@@ -13,24 +13,25 @@ import java.util.List;
 public class 求三数之和 {
 
     public static void main(String[] args) {
-        List<List<Integer>> list = threeSum(new int[]{0, 2, 3, 4});
-        System.out.println(list);
+//        List<List<Integer>> list = threeSum(new int[]{0, 2, 3, 4});
+//        System.out.println(list);
     }
 
-    public static List<List<Integer>> threeSum(int[] nums) {
-        List<List<Integer>> list = new ArrayList<>(10);
+    private List<List<Integer>> list = new ArrayList<>(10);
+
+    public List<List<Integer>> threeSum(int[] nums) {
         Arrays.sort(nums);
         int length = nums.length;
 
         for (int i = 0; i < length; i++) {
             if (i == 0 || (nums[i] != nums[i - 1])) {
-                twoSum(nums, i, length - 1, list);
+                twoSum(nums, i, length - 1);
             }
         }
         return list;
     }
 
-    private static void twoSum(int[] nums, int head, int tail, List<List<Integer>> list) {
+    private void twoSum(int[] nums, int head, int tail) {
         int firstResult = nums[head++];
         boolean flag = false;
         while (head < tail) {
