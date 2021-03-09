@@ -36,7 +36,7 @@ public class 最长递增子序列 {
      * @return
      */
     public int lengthOfLIS(int[] nums) {
-        int[] dp = new int[nums.length + 1];
+        int[] dp = new int[nums.length];
         Arrays.fill(dp, 1);
         int result = 0;
         for (int i = 0; i < nums.length; i++) {

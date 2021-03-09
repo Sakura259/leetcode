@@ -1,5 +1,7 @@
 package com.haobai.niuke;
 
+import com.sun.xml.internal.bind.v2.model.core.ID;
+
 /**
  * @author haobai
  * @description:
@@ -8,8 +10,8 @@ package com.haobai.niuke;
 public class NC105_二分查找 {
 
     public static void main(String[] args) {
-        int[] arr = {1, 2, 4, 4, 5};
-        System.out.println(new NC105_二分查找().upper_bound_(5, 4, arr));
+        int[] ints = {1, 2, 4, 4, 5};
+        new NC105_二分查找().search(ints, 4);
     }
 
     /**
@@ -19,24 +21,24 @@ public class NC105_二分查找 {
      * 3、大于v  left = mid  + 1    小于mid， right = mid
      * 4、最后left == right就是我们要找的值
      *
-     * @param n int整型 数组长度
-     * @param v int整型 查找值
-     * @param a int整型一维数组 有序数组
-     * @return int整型
+     * @param nums
+     * @param target
+     * @return
      */
-    public int upper_bound_(int n, int v, int[] a) {
-        int left = 0, right = n - 1;
-        if (a[right] < v) {
-            return n + 1;
-        }
-        while (left < right) {
-            int mid = left + (right - left) / 2;
-            if (a[mid] >= v) {
-                right = mid;
+    public int search(int[] nums, int target) {
+        // write code here
+        int left = 0, right = nums.length - 1, index = -1;
+        while (left <= right) {
+            int mid = (right - left) / 2 + left;
+            if (nums[mid] == target) {
+                index = mid;
+                right = mid - 1;
+            } else if (nums[mid] > target) {
+                right = mid - 1;
             } else {
                 left = mid + 1;
             }
         }
-        return left + 1;
+        return index;
     }
 }
