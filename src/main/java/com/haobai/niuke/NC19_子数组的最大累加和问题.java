@@ -8,11 +8,12 @@ package com.haobai.niuke;
 public class NC19_子数组的最大累加和问题 {
 
     public static void main(String[] args) {
-        int[] arr = {-1, 1,2,3,-5};
+        int[] arr = {-1, 1, 2, 3, -5};
         System.out.println(new NC19_子数组的最大累加和问题().maxSumOfSubarray(arr));
     }
 
     /**
+     * 就是最大子旭和
      * 最大累计这些问题，就可以通过动态规划来做，动态规划统一采用自底向上的做法，定义dp数组，确定base case
      * 在这边 dp[0] = arr[0] 就是第一个数
      * 接下来来思考状态转移方程

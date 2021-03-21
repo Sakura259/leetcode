@@ -33,7 +33,7 @@ public class NC78_反转链表 {
 
     public ListNode ReverseList(ListNode head) {
         ListNode current = head;
-        ListNode next = null;
+        ListNode next;
         ListNode pre = null;
         while (current != null) {
             next = current.next;

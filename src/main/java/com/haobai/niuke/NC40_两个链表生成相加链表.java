@@ -80,7 +80,7 @@ public class NC40_两个链表生成相加链表 {
      * @return
      */
     private ListNode reserveList(ListNode listNode) {
-        ListNode pre = null, next = null, cur = listNode;
+        ListNode pre = null, next, cur = listNode;
         while (cur != null) {
             next = cur.next;
             cur.next = pre;

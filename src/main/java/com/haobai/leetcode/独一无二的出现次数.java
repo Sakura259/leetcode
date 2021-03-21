@@ -11,11 +11,16 @@ import java.util.*;
  */
 public class 独一无二的出现次数 {
 
+    public static void main(String[] args) {
+        int[] arr = {2,2,3};
+        boolean b = new 独一无二的出现次数().uniqueOccurrences(arr);
+    }
+
     public boolean uniqueOccurrences(int[] arr) {
         Map<Integer, Integer> map = new HashMap<Integer, Integer>(16);
         for (int i = 0; i < arr.length; i++) {
             map.put(arr[i], map.getOrDefault(arr[i], 0) + 1);
         }
-        return map.size() == new HashSet<>(map.values()).size();
+        return map.size() == arr.length;
     }
 }
