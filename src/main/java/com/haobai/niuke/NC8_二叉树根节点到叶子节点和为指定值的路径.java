@@ -30,6 +30,13 @@ public class NC8_二叉树根节点到叶子节点和为指定值的路径 {
         return result;
     }
 
+    /**
+     * 递归 + 回溯
+     *
+     * @param list
+     * @param root
+     * @param sum
+     */
     private void dfs(ArrayList<Integer> list, TreeNode root, int sum) {
         if (root == null) {
             return;
@@ -45,5 +52,6 @@ public class NC8_二叉树根节点到叶子节点和为指定值的路径 {
             dfs(list, root.right, sum);
         }
         list.remove(list.size() - 1);
+        sum += root.val;
     }
 }

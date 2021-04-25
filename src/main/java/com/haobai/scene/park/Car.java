@@ -1,9 +1,9 @@
-package com.haobai.scene.parklot;
+package com.haobai.scene.park;
 
 /**
  * @author haobai
  * @description:
- * @date 2021/2/25 10:48
+ * @date 2021/4/15 22:05
  */
 public interface Car {
 

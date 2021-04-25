@@ -44,4 +44,40 @@ public class NC17_最长回文子串 {
         }
         return max;
     }
+
+    /**
+     * 获取回文的字符串  采用中心扩展法
+     * 时间复杂度为O(n方)
+     * 空间复杂度为O(1)
+     * @param s
+     * @return
+     */
+    public String longestPalindrome(String s) {
+        int len = s.length();
+        if (len == 0) {
+            return "";
+        }
+        int start = 0, end = 0;
+        for (int i = 0; i < len; i++) {
+            // 回文字符串为奇数
+            int len1 = validPalindrome(s, i, i);
+            // 回文字符串为偶数
+            int len2 = validPalindrome(s, i, i + 1);
+            int max = Math.max(len1, len2);
+            if (max > end - start) {
+                start = i - (max - 1) / 2;
+                end = i + max / 2;
+            }
+        }
+        return s.substring(start, end + 1);
+    }
+
+    private int validPalindrome(String str, int left, int right) {
+        while (left >= 0 && right < str.length() && str.charAt(left) == str.charAt(right)) {
+            left--;
+            right++;
+        }
+        return right - left - 1;
+    }
+
 }

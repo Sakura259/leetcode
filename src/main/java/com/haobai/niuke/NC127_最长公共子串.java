@@ -8,7 +8,7 @@ package com.haobai.niuke;
 public class NC127_最长公共子串 {
 
     public static void main(String[] args) {
-        System.out.println(new NC127_最长公共子串().LCS("1AB2345CD", "12345EF"));
+        System.out.println(new NC127_最长公共子串().LCS("1A2C3D4B56", "B1D23CA45B6A"));
     }
 
     /**

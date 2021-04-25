@@ -6,7 +6,7 @@ import java.util.concurrent.*;
 
 /**
  * @author haobai
- * @description: 1、启5个线程，并发对1-n之间的数字进行求和，并打印结果。（要求5个线程全部计算完再一次性汇总）
+ * @description: 1、起 5个线程，并发对1-n之间的数字进行求和，并打印结果。（要求5个线程全部计算完再一次性汇总）
  * @date 2021/3/1 14:08
  */
 public class SumTest {

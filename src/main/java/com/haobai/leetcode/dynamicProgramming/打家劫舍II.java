@@ -17,7 +17,7 @@ public class 打家劫舍II {
 
     private int dp(int[] nums, int start, int end) {
         int dp_1 = 0, dp_2 = 0, dp = 0;
-        for (int i = end - 1;i>=start;i--) {
+        for (int i = end - 1; i >= start; i--) {
             dp = Math.max(dp_1, dp_2 + nums[i]);
             dp_2 = dp_1;
             dp_1 = dp;

@@ -45,6 +45,7 @@ public class NC91_最长递增子序列 {
 
     /**
      * 采用二分查找 + 贪心的方式来实现， 时间复杂度为 O(n * Log n)
+     * 二分查找主要是找到第一个比这个数大的值，进行替换
      *
      * @param arr int整型一维数组 the array
      * @return int整型一维数组
